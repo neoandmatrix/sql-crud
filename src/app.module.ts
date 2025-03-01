@@ -22,6 +22,7 @@ config();
       password: process.env.DB_PASS,
       database: process.env.DB_NAME,
       entities: [User],
+      synchronize: true,
     }),
     UserModule,
   ],

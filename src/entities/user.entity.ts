@@ -13,4 +13,7 @@ export class User {
 
   @Column({ default: true })
   isActive: boolean;
+
+  @Column({ default: false })
+  deleted: boolean;
 }
