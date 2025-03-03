@@ -25,4 +25,11 @@ export const UserSchema = new EntitySchema<User>({
       default: false,
     },
   },
+  relations: {
+    addresses: {
+      type: 'one-to-many',
+      target: 'Addresses',
+      inverseSide: 'user',
+    },
+  },
 });

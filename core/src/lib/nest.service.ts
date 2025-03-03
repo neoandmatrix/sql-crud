@@ -25,7 +25,7 @@ export class NestService<T extends ObjectLiteral> {
     this.repository = repository;
     this.options = serviceOptions || {
       multi: false,
-      softDelete: false,
+      softDelete: true,
     };
   }
 
